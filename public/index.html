@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel= "stylesheet" href="/index.css" /> 
+    <link rel= "stylesheet" href="/normalize.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/978be79afd.js"
+      crossorigin="anonymous"
+      ></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+      />
+      <script src="/functions.js"></script>
+    <title>Mami</title>
+  </head>
+  <body>
+    <container class="container">
+      <nav class="navbar">
+        <div class="gmail_icons">
+          <i class="fas fa-bars"></i>
+          <div class="gmail_nene">
+            <i class="fas fa-envelope"></i>
+            <h1>Çmail</h1>
+          </div>
+        </div>
+        <div class="input_container">
+          <i class="fas fa-search"></i>
+          <input class="searchbar" placeholder="Search mail" />
+        </div>
+        <i class="fas fa-cog"></i>
+      </nav>
+      <div class="body">
+        <section class="sidebar">
+          <ul class="sidebar_list">
+            <li id="new_mail_button" class="sidebar_item">
+                <i class="fas fa-plus"></i>
+                <p>Crear mail</p>
+              </li>
+            <li class="sidebar_item">
+              <i class="fas fa-inbox"></i>
+              <p>Inbox</p>
+            </li>
+            <li class="sidebar_item">
+              <i class="fas fa-times"></i>
+              <p>Spam</p>
+            </li>
+            <li class="sidebar_item">
+              <i class="fas fa-paper-plane"></i>
+              <p>Sent</p>
+            </li>
+          </ul>
+        </section>
+        <main class="content">
+          <h1>Contento</h1>
+        </main>
+      </div>
+      <div id="mail_creation" class="mail_creation">
+        <div id="mail_creation_tab" class= "mail_creation_tab">
+            <p>Mensaje nuevo</p>
+            <div class= "mail_creation_tab_icons">
+                <i id= "new_mail_expand" class="fas fa-expand-alt new_mail_expand"></i>
+                <i id= "new_mail_minus" class="fas fa-minus new_mail_minus"></i>
+                <i id= "new_mail_cross" class="fas fa-times"></i>
+            </div>
+        </div>
+        <form action="/user.js" method="POST" id="mail_creation_body" class= "mail_creation_body">
+            <div class="mail_creation_body_inputs"> 
+                <div class="mail_input_1">
+                    <label for = "destinatary_field">Para</label>
+                    <input name= "destinatary" id= "destinatary_field" class="destinatary_field" />
+                </div>
+                <div class="mail_input_2"> 
+                    <label for = "subject_field">Asunto</label>
+                    <input name= "subject" id= "subject_field" class="subject_field" />
+                </div>
+            </div>
+            <textarea class= "textarea"></textarea>
+            <button type= "submit" class="sendButton">
+              Mamita que patitas
+            </button>
+          </form>
+      </div>
+    </container>
+  </body>
+</html>
